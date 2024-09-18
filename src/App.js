@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{lazy,Suspense} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Home } from './components/Home';
+import { Menu } from './components/Menu';
+import { Booking } from './components/Booking';
+import { Navbar } from './components/Navbar';
+import { CockTail } from './components/CockTail';
+import {FoodCategories} from './components/FoodCategories'
+import { IndividualCategory } from './components/IndividualCategory';
+import { AboutUs } from './components/AboutUs';
 
-function App() {
+ 
+ 
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs/>} />
+        <Route path="/menu" element={<Menu />}>
+            <Route path="foodcategories" element={<FoodCategories/>}>
+                      
+                 
+            
+            </Route>
+            <Route path="foodcategories/:id" element={<IndividualCategory />} />
+
+            <Route path="cockTail" element={<CockTail/>}/>
+ 
+            
+            
+          
+        </Route>
+        <Route path="/booking" element={<Booking />} />
+      </Routes>
+     
+    </Router>
   );
 }
-
-export default App;

@@ -1,0 +1,104 @@
+ 
+.home-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+ 
+  .hero {
+    background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #E64833;  
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+   
+  .featured-dishes {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #244855;
+    margin-bottom: 40px;
+  }
+  
+  .dishes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .dish-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .dish-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .dish-card h3 {
+    margin: 20px 0 10px 0;
+    color: #E64833;
+    font-size: 1.5rem;
+  }
+  
+  .dish-card p {
+    padding: 0 15px;
+    color: #666;
+  }
+  
+  .dish-card:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .cta-section {
+    background-color: #244855;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #E64833;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ffa500;
+  }
+  

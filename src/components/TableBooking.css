@@ -1,0 +1,115 @@
+ 
+.xyz{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;  
+}
+
+.table-booking-container {
+  position: relative;
+  height: 100vh; 
+  width: 100vw;  
+  overflow: hidden;  
+  background: linear-gradient(to right, #f9f9f9, #e2e2e2);  
+}
+
+.booking-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; 
+  height: 100%;  
+  background: url('https://images.unsplash.com/photo-1543352634-a1c51d9f1fa7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;  
+}
+
+ 
+.booking-text {
+  position: absolute;
+  color: white;  
+  text-align: center;
+  font-size: 2rem;  
+  font-weight: bold;
+  width: 100%;
+  top: 20%;
+  
+  z-index: 1;  
+}
+
+ 
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  overflow-y: auto;  
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);  
+  padding: 30px;
+  border-radius: 8px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+  width: 100%;
+  max-width: 600px; 
+  overflow: auto;  
+  max-height: 80vh;  
+}
+
+.form-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #E64833; 
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+ 
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #E64833;  
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;  
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color:#244855;  
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;  
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center; 
+  margin-top: 20px;  
+}
+
+.submit-button:hover {
+  background-color: #b3001f;  
+}
