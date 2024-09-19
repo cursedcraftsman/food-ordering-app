@@ -42,4 +42,14 @@
     display: flex;
     align-items: center;
   }
+
+ 
+.cart-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 15px;
+}
+
   

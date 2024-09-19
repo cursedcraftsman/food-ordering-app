@@ -1,9 +1,11 @@
+ 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 import './Navbar.css'; 
 import logo from "../images/logo.png";   
 
-export const Navbar = () => {
+export const Navbar = ({ onCartClick }) => {
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid">
@@ -30,10 +32,15 @@ export const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/booking">Booking</Link>
               </li>
+              <li className="nav-item">
+                <button className="nav-link cart-icon" onClick={onCartClick}>
+                  <FaShoppingCart size={24} color="white" />
+                </button>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
   );
-}
+};

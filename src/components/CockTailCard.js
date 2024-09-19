@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { FaCartPlus } from 'react-icons/fa';  
 import './CockTailCard.css';  
 
-export const CockTailCard = ({ foods }) => {
+export const CockTailCard = ({ foods, addToCart }) => {
   return (
     <div className="container">
       <div className="row">
@@ -19,7 +19,10 @@ export const CockTailCard = ({ foods }) => {
               <div className="card-body">
                 <h5 className="card-title">{food.strDrink}</h5>
                 <div className="icon-container">
-                  <FaCartPlus className="icon" />
+                  <FaCartPlus 
+                    className="icon" 
+                    onClick={() => addToCart(food)}   
+                  />
                 </div>
               </div>
             </div>
