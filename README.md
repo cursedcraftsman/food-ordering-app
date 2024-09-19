@@ -1,2 +1,2 @@
 live:
-https://dishdiscovery-vyshnaviakkinepally.netlify.app/
+dishdiscovery-vyshnaviakkinepally.netlify.app
